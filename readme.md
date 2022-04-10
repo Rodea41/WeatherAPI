@@ -1,7 +1,7 @@
 # Weather Checker
 
 ## Description
-Created a program that connects to the openweathermap.org API to pull the weather description and temperature (in Farenheight) from a city entered by the user.
+Created a program that connects to the openweathermap.org API to pull the weather description and temperature (in Fahrenheit) from a city entered by the user.
 
 
 ## TODO / Improvements to make:
