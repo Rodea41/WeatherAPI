@@ -23,8 +23,9 @@ if response.status_code == 200:
     description = weather[0]['description'] # Access 1st element of the weather array which is a dictionary, and the accessed the description key
     print(f"The weather description for {city} is : {description}")
 
-    temperature = temp['temp']  # No need to put an index (like in the 'description' var above) because the temperature is the only key in the 'temp' dictionary
-    print(f"The temperature in {city} is currently {temperature} degrees Fahrenheit")
+    temperature = temp['temp'] 
+    temp_fahrenheit = round((int(temperature) - 273.15)*2 + 30, 2) # No need to put an index (like in the 'description' var above) because the temperature is the only key in the 'temp' dictionary
+    print(f"The temperature in {city} is currently {temp_fahrenheit} degrees Fahrenheit")
 
 
 
